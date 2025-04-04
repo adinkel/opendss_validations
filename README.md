@@ -4,7 +4,7 @@ Circuit model field validations for OpenDSS
 
 ## Dependencies
 
-* <a href="https://greatexpectations.io/" target="_blank"><code>Great Expectations</code></a> for api and docs
+* <a href="https://greatexpectations.io/" target="_blank"><code>Great Expectations</code></a>
 
 ## Usage (running locally):
 
