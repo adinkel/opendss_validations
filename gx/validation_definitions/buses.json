@@ -1,0 +1,22 @@
+{
+  "data": {
+    "asset": {
+      "id": "13a4d8a2-e1bc-40b4-9030-7cdca2d90d0a",
+      "name": "buses_table"
+    },
+    "batch_definition": {
+      "id": "f6ff3c0e-b879-4401-8474-4602a08f0ab6",
+      "name": "buses_batch_definition"
+    },
+    "datasource": {
+      "id": "5b16b6cf-b01a-480f-9d02-8ff31056c091",
+      "name": "dss_postgres_db"
+    }
+  },
+  "id": "87522f17-c757-48fb-b058-446ea4d68069",
+  "name": "buses",
+  "suite": {
+    "id": "987a044a-eaa6-4cb7-8321-d10d2946c508",
+    "name": "buses"
+  }
+}

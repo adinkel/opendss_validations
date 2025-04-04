@@ -1,0 +1,22 @@
+{
+  "data": {
+    "asset": {
+      "id": "6de9289f-df3f-4d58-8b40-0d7d1eaa3493",
+      "name": "transformers_table"
+    },
+    "batch_definition": {
+      "id": "42289738-32b5-4ac6-8b38-0aff38ac9cb3",
+      "name": "transformers_batch_definition"
+    },
+    "datasource": {
+      "id": "5b16b6cf-b01a-480f-9d02-8ff31056c091",
+      "name": "dss_postgres_db"
+    }
+  },
+  "id": "fb18a625-5359-4bbb-b565-eaf46430d40f",
+  "name": "transformers",
+  "suite": {
+    "id": "f4f98bb9-c6c7-4abc-9559-872f736eae43",
+    "name": "transformers"
+  }
+}

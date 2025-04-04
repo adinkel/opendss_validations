@@ -1,0 +1,22 @@
+{
+  "data": {
+    "asset": {
+      "id": "622fb1d0-d6ae-4e98-b73c-be7443f59c23",
+      "name": "capcontrol_table"
+    },
+    "batch_definition": {
+      "id": "2975f659-1c5d-44d7-92a8-d407b1047fbe",
+      "name": "capcontrol_batch_definition"
+    },
+    "datasource": {
+      "id": "5b16b6cf-b01a-480f-9d02-8ff31056c091",
+      "name": "dss_postgres_db"
+    }
+  },
+  "id": "b346b961-a510-4d10-9b41-3d0aa667d48c",
+  "name": "capcontrol",
+  "suite": {
+    "id": "49239a41-b9d5-4985-91d8-4d617363f5b4",
+    "name": "capcontrol"
+  }
+}

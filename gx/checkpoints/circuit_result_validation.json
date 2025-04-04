@@ -1,0 +1,18 @@
+{
+  "actions": [],
+  "id": "e82895b2-b9f9-4011-8bae-8ee53b37e920",
+  "name": "circuit_result_validation",
+  "result_format": {
+    "result_format": "SUMMARY"
+  },
+  "validation_definitions": [
+    {
+      "id": "0d1360df-0dbf-4cd7-98cd-24acf650380b",
+      "name": "pfnode"
+    },
+    {
+      "id": "9b0f5bdf-2c15-41da-af8f-8408769e4314",
+      "name": "pfline"
+    }
+  ]
+}

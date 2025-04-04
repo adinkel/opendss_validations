@@ -1,0 +1,22 @@
+{
+  "data": {
+    "asset": {
+      "id": "2b572e1b-b5fa-4e17-a7fa-7842b71d54a3",
+      "name": "loads_table"
+    },
+    "batch_definition": {
+      "id": "f7448e37-6c01-4c6e-8f64-b9ec4a44f4d2",
+      "name": "loads_batch_definition"
+    },
+    "datasource": {
+      "id": "5b16b6cf-b01a-480f-9d02-8ff31056c091",
+      "name": "dss_postgres_db"
+    }
+  },
+  "id": "6caa2cec-155b-42f0-93a8-e4ec354be0ac",
+  "name": "loads",
+  "suite": {
+    "id": "fb06930e-ec6f-4644-9604-e586e1d6d654",
+    "name": "loads"
+  }
+}

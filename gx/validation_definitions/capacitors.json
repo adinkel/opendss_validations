@@ -1,0 +1,22 @@
+{
+  "data": {
+    "asset": {
+      "id": "ff635202-04d4-4c4c-a16a-2c9d23110af1",
+      "name": "capacitors_table"
+    },
+    "batch_definition": {
+      "id": "cd296979-ec44-4e3c-9c4b-6ce576624b95",
+      "name": "capacitors_batch_definition"
+    },
+    "datasource": {
+      "id": "5b16b6cf-b01a-480f-9d02-8ff31056c091",
+      "name": "dss_postgres_db"
+    }
+  },
+  "id": "5ffe0916-9cbc-4714-9bd3-7cd911421902",
+  "name": "capacitors",
+  "suite": {
+    "id": "2abf73af-c7b3-4630-8439-fee932d65e54",
+    "name": "capacitors"
+  }
+}

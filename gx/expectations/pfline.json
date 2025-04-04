@@ -1,0 +1,28 @@
+{
+  "expectations": [
+    {
+      "id": "5015ae18-f1a8-405e-96ab-e4498f19cedd",
+      "kwargs": {
+        "column": "loading_percent",
+        "max_value": 100.0,
+        "min_value": 0.0
+      },
+      "meta": {},
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "8052cb53-b17e-4e85-bac9-eec94f234cb5",
+      "kwargs": {
+        "column": "loading_percent"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    }
+  ],
+  "id": "92bcce99-526e-4d64-a76d-5ad3ce58d5a3",
+  "meta": {
+    "great_expectations_version": "1.3.12"
+  },
+  "name": "pfline",
+  "notes": null
+}

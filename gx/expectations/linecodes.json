@@ -1,0 +1,51 @@
+{
+  "expectations": [
+    {
+      "id": "931b5ecb-a555-45e7-accd-53df39036d9b",
+      "kwargs": {
+        "column": "normamps",
+        "max_value": 10000.0,
+        "min_value": 0.0
+      },
+      "meta": {},
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "39aee7f2-9a3b-437c-a63e-aee796ebfe4b",
+      "kwargs": {
+        "column": "name"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_be_unique"
+    },
+    {
+      "id": "06142dff-9c11-480a-ae68-46f91e1e5a85",
+      "kwargs": {
+        "column": "name"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "759a70d6-8863-4a8c-9405-950e926886c2",
+      "kwargs": {
+        "column_set": [
+          "id",
+          "name",
+          "units",
+          "nphases",
+          "normamps"
+        ],
+        "exact_match": false
+      },
+      "meta": {},
+      "type": "expect_table_columns_to_match_set"
+    }
+  ],
+  "id": "1230714d-9561-438b-aa1b-99f036c7aec2",
+  "meta": {
+    "great_expectations_version": "1.3.12"
+  },
+  "name": "linecodes",
+  "notes": null
+}

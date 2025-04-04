@@ -1,0 +1,46 @@
+{
+  "expectations": [
+    {
+      "id": "afea726f-418f-46b9-a614-3c23c92b6e6b",
+      "kwargs": {
+        "column": "type",
+        "value_set": [
+          "time",
+          "voltage"
+        ]
+      },
+      "meta": {
+        "notes": "Control type"
+      },
+      "type": "expect_column_distinct_values_to_be_in_set"
+    },
+    {
+      "id": "20bd7f49-0e5a-4fa7-8af0-68516ee65e50",
+      "kwargs": {
+        "column": "on",
+        "max_value": 128.0,
+        "min_value": 112.0
+      },
+      "meta": {
+        "notes": "The capacitor turns on at this measured value"
+      },
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "bace3e8b-f145-4760-8799-7488a554b263",
+      "kwargs": {
+        "column": "off",
+        "max_value": 128.0,
+        "min_value": 112.0
+      },
+      "meta": {},
+      "type": "expect_column_values_to_be_between"
+    }
+  ],
+  "id": "49239a41-b9d5-4985-91d8-4d617363f5b4",
+  "meta": {
+    "great_expectations_version": "1.3.12"
+  },
+  "name": "capcontrol",
+  "notes": null
+}

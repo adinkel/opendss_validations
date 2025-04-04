@@ -1,0 +1,213 @@
+# Welcome to Great Expectations! Always know what to expect from your data.
+#
+# Here you can define datasources, batch kwargs generators, integrations and
+# more. This file is intended to be committed to your repo. For help with
+# configuration please:
+#   - Read our docs: https://docs.greatexpectations.io/docs/guides/connecting_to_your_data/connect_to_data_overview/#2-configure-your-datasource
+#   - Join our slack channel: http://greatexpectations.io/slack
+
+# config_version refers to the syntactic version of this config file, and is used in maintaining backwards compatibility
+# It is auto-generated and usually does not need to be changed.
+config_version: 4.0
+
+# This config file supports variable substitution which enables: 1) keeping
+# secrets out of source control & 2) environment-based configuration changes
+# such as staging vs prod.
+#
+# When GX encounters substitution syntax (like `my_key: ${my_value}` or
+# `my_key: $my_value`) in the great_expectations.yml file, it will attempt
+# to replace the value of `my_key` with the value from an environment
+# variable `my_value` or a corresponding key read from this config file,
+# which is defined through the `config_variables_file_path`.
+# Environment variables take precedence over variables defined here.
+#
+# Substitution values defined here can be a simple (non-nested) value,
+# nested value such as a dictionary, or an environment variable (i.e. ${ENV_VAR})
+#
+#
+# https://docs.greatexpectations.io/docs/guides/setup/configuring_data_contexts/how_to_configure_credentials
+
+
+config_variables_file_path: uncommitted/config_variables.yml
+
+# The plugins_directory will be added to your python path for custom modules
+# used to override and extend Great Expectations.
+plugins_directory: plugins/
+
+stores:
+# Stores are configurable places to store things like Expectations, Validations
+# Data Docs, and more. These are for advanced users only - most users can simply
+# leave this section alone.
+  expectations_store:
+    class_name: ExpectationsStore
+    store_backend:
+      class_name: TupleFilesystemStoreBackend
+      base_directory: expectations/
+
+  validation_results_store:
+    class_name: ValidationResultsStore
+    store_backend:
+      class_name: TupleFilesystemStoreBackend
+      base_directory: uncommitted/validations/
+
+  checkpoint_store:
+    class_name: CheckpointStore
+    store_backend:
+      class_name: TupleFilesystemStoreBackend
+      suppress_store_backend_id: true
+      base_directory: checkpoints/
+
+  validation_definition_store:
+    class_name: ValidationDefinitionStore
+    store_backend:
+      class_name: TupleFilesystemStoreBackend
+      base_directory: validation_definitions/
+
+expectations_store_name: expectations_store
+validation_results_store_name: validation_results_store
+checkpoint_store_name: checkpoint_store
+
+data_docs_sites:
+  # Data Docs make it simple to visualize data quality in your project. These
+  # include Expectations, Validations & Profiles. The are built for all
+  # Datasources from JSON artifacts in the local repo including validations &
+  # profiles from the uncommitted directory. Read more at https://docs.greatexpectations.io/docs/terms/data_docs
+  local_site:
+    class_name: SiteBuilder
+    show_how_to_buttons: true
+    store_backend:
+      class_name: TupleFilesystemStoreBackend
+      base_directory: uncommitted/data_docs/local_site/
+    site_index_builder:
+      class_name: DefaultSiteIndexBuilder
+fluent_datasources:
+  dss_postgres_db:
+    type: postgres
+    id: 5b16b6cf-b01a-480f-9d02-8ff31056c091
+    assets:
+      lines_table:
+        type: table
+        id: 9b054948-e97f-4116-a42a-2a8157e300d9
+        batch_metadata: {}
+        batch_definitions:
+          lines_batch_definition:
+            id: 74f4a070-a421-417a-808f-a05b03dfaff6
+            partitioner:
+        table_name: line
+        schema_name:
+      loads_table:
+        type: table
+        id: 2b572e1b-b5fa-4e17-a7fa-7842b71d54a3
+        batch_metadata: {}
+        batch_definitions:
+          loads_batch_definition:
+            id: f7448e37-6c01-4c6e-8f64-b9ec4a44f4d2
+            partitioner:
+        table_name: load
+        schema_name:
+      transformers_table:
+        type: table
+        id: 6de9289f-df3f-4d58-8b40-0d7d1eaa3493
+        batch_metadata: {}
+        batch_definitions:
+          transformers_batch_definition:
+            id: 42289738-32b5-4ac6-8b38-0aff38ac9cb3
+            partitioner:
+        table_name: transformer
+        schema_name:
+      buses_table:
+        type: table
+        id: 13a4d8a2-e1bc-40b4-9030-7cdca2d90d0a
+        batch_metadata: {}
+        batch_definitions:
+          buses_batch_definition:
+            id: f6ff3c0e-b879-4401-8474-4602a08f0ab6
+            partitioner:
+        table_name: bus
+        schema_name:
+      capacitors_table:
+        type: table
+        id: ff635202-04d4-4c4c-a16a-2c9d23110af1
+        batch_metadata: {}
+        batch_definitions:
+          capacitors_batch_definition:
+            id: cd296979-ec44-4e3c-9c4b-6ce576624b95
+            partitioner:
+        table_name: capacitor
+        schema_name:
+      capcontrol_table:
+        type: table
+        id: 622fb1d0-d6ae-4e98-b73c-be7443f59c23
+        batch_metadata: {}
+        batch_definitions:
+          capcontrol_batch_definition:
+            id: 2975f659-1c5d-44d7-92a8-d407b1047fbe
+            partitioner:
+        table_name: capcontrol
+        schema_name:
+      linecodes_table:
+        type: table
+        id: 283fa794-7aa4-4a1b-a384-2f6991a1a49c
+        batch_metadata: {}
+        batch_definitions:
+          linecodes_batch_definition:
+            id: 27fb1991-bbd8-47ad-85c9-e6449d1e665e
+            partitioner:
+        table_name: linecode
+        schema_name:
+      pfnode_table:
+        type: table
+        id: d8fd075f-0f17-4902-bafb-08d7dd117fcf
+        batch_metadata: {}
+        batch_definitions:
+          pfnode_batch_definition:
+            id: 32d6a255-6823-4ecc-af48-d06116865ea5
+            partitioner:
+        table_name: pfresultnode
+        schema_name:
+      pfline_table:
+        type: table
+        id: 79227a34-86d8-4a2f-9a45-738fc8bcb765
+        batch_metadata: {}
+        batch_definitions:
+          pfline_batch_definition:
+            id: 2476d58e-619c-420a-966b-c153b319867d
+            partitioner:
+        table_name: pfresultline
+        schema_name:
+      wiredata_table:
+        type: table
+        id: 4d64998c-a97a-4222-b16a-e781e31dea5b
+        batch_metadata: {}
+        batch_definitions:
+          wiredata__batch_definition:
+            id: 4bee253c-a781-464d-a4cb-b0790e50303a
+            partitioner:
+          wiredata_batch_definition:
+            id: e74ce154-2d5f-4a27-a516-c595f96b1339
+            partitioner:
+        table_name: wiredata
+        schema_name:
+      wireposition_table:
+        type: table
+        id: 9c928482-317a-456d-9ef2-91a30dc8a54e
+        batch_metadata: {}
+        batch_definitions:
+          wireposition_batch_definition:
+            id: 93bed89c-96de-40a3-993c-aa4e5e097230
+            partitioner:
+        table_name: wireposition
+        schema_name:
+      wirespacinginfo_table:
+        type: table
+        id: e0cc7087-5012-43d6-a8c2-bb44082b24ee
+        batch_metadata: {}
+        batch_definitions:
+          wirespacinging_batch_definition:
+            id: 4b0fdbdc-ff77-4fc5-86e6-2b82601fe00a
+            partitioner:
+        table_name: wirespacinginfo
+        schema_name:
+    connection_string: ${POSTGRESQL_CONNECTION_STRING}
+analytics_enabled:
+data_context_id: c076a762-a094-4272-8a14-edac27372743

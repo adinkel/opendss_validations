@@ -1,0 +1,42 @@
+{
+  "actions": [],
+  "id": "2659d5e2-24f3-4cfc-83ea-2747254ad049",
+  "name": "circuit_model_validation",
+  "result_format": {
+    "result_format": "SUMMARY"
+  },
+  "validation_definitions": [
+    {
+      "id": "5aea48d0-8264-4251-8a16-d45cce21fda4",
+      "name": "lines"
+    },
+    {
+      "id": "6caa2cec-155b-42f0-93a8-e4ec354be0ac",
+      "name": "loads"
+    },
+    {
+      "id": "fb18a625-5359-4bbb-b565-eaf46430d40f",
+      "name": "transformers"
+    },
+    {
+      "id": "87522f17-c757-48fb-b058-446ea4d68069",
+      "name": "buses"
+    },
+    {
+      "id": "5ffe0916-9cbc-4714-9bd3-7cd911421902",
+      "name": "capacitors"
+    },
+    {
+      "id": "b346b961-a510-4d10-9b41-3d0aa667d48c",
+      "name": "capcontrol"
+    },
+    {
+      "id": "6d2a48e2-fef7-410c-8df7-09e61728f55e",
+      "name": "linecodes"
+    },
+    {
+      "id": "da96be87-856c-401c-b04a-4f48bdfb4c22",
+      "name": "wiredata"
+    }
+  ]
+}

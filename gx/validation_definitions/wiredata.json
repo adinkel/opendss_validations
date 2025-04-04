@@ -1,0 +1,22 @@
+{
+  "data": {
+    "asset": {
+      "id": "4d64998c-a97a-4222-b16a-e781e31dea5b",
+      "name": "wiredata_table"
+    },
+    "batch_definition": {
+      "id": "e74ce154-2d5f-4a27-a516-c595f96b1339",
+      "name": "wiredata_batch_definition"
+    },
+    "datasource": {
+      "id": "5b16b6cf-b01a-480f-9d02-8ff31056c091",
+      "name": "dss_postgres_db"
+    }
+  },
+  "id": "da96be87-856c-401c-b04a-4f48bdfb4c22",
+  "name": "wiredata",
+  "suite": {
+    "id": "1a5ec50e-c619-4f8d-9497-52f96a189448",
+    "name": "wiredata"
+  }
+}

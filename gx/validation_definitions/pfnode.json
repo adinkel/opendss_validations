@@ -1,0 +1,22 @@
+{
+  "data": {
+    "asset": {
+      "id": "d8fd075f-0f17-4902-bafb-08d7dd117fcf",
+      "name": "pfnode_table"
+    },
+    "batch_definition": {
+      "id": "32d6a255-6823-4ecc-af48-d06116865ea5",
+      "name": "pfnode_batch_definition"
+    },
+    "datasource": {
+      "id": "5b16b6cf-b01a-480f-9d02-8ff31056c091",
+      "name": "dss_postgres_db"
+    }
+  },
+  "id": "0d1360df-0dbf-4cd7-98cd-24acf650380b",
+  "name": "pfnode",
+  "suite": {
+    "id": "f8c318f6-62a7-44c1-8eb8-6464339296c1",
+    "name": "pfnode"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "expectations": [
+    {
+      "id": "1dbddee5-b7ac-499c-9ef5-a878a21c52ba",
+      "kwargs": {
+        "column": "linecode"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "2d6d77ee-b268-4b1f-ad2b-e01c758e17ac",
+      "kwargs": {
+        "column": "linecode",
+        "value_set": [
+          "default"
+        ]
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_in_set"
+    },
+    {
+      "id": "21c0917d-d28a-47d8-94d8-eb767f40f8ef",
+      "kwargs": {
+        "column": "phases",
+        "max_value": 3.0,
+        "min_value": 1.0
+      },
+      "meta": {},
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "f0358001-cd33-431c-a4fd-42574639acf3",
+      "kwargs": {
+        "column": "length",
+        "max_value": 10000.0,
+        "min_value": 0.0
+      },
+      "meta": {},
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "7f72f46b-4cdd-4b9a-bd79-d2d925c567a8",
+      "kwargs": {
+        "column": "name"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_be_unique"
+    },
+    {
+      "id": "440b8265-a322-4137-83aa-752ad6f448ef",
+      "kwargs": {
+        "column": "name"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "45a79b87-93ba-42de-8395-985bd79506af",
+      "kwargs": {
+        "column": "units",
+        "value_set": [
+          "miles",
+          "feet",
+          "km"
+        ]
+      },
+      "meta": {},
+      "type": "expect_column_distinct_values_to_be_in_set"
+    }
+  ],
+  "id": "03ecd388-e7ab-4bb8-a5b1-503be8b68112",
+  "meta": {
+    "great_expectations_version": "1.3.12"
+  },
+  "name": "lines",
+  "notes": null
+}

@@ -1,0 +1,22 @@
+{
+  "data": {
+    "asset": {
+      "id": "9b054948-e97f-4116-a42a-2a8157e300d9",
+      "name": "lines_table"
+    },
+    "batch_definition": {
+      "id": "74f4a070-a421-417a-808f-a05b03dfaff6",
+      "name": "lines_batch_definition"
+    },
+    "datasource": {
+      "id": "5b16b6cf-b01a-480f-9d02-8ff31056c091",
+      "name": "dss_postgres_db"
+    }
+  },
+  "id": "5aea48d0-8264-4251-8a16-d45cce21fda4",
+  "name": "lines",
+  "suite": {
+    "id": "03ecd388-e7ab-4bb8-a5b1-503be8b68112",
+    "name": "lines"
+  }
+}

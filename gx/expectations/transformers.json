@@ -1,0 +1,85 @@
+{
+  "expectations": [
+    {
+      "id": "1c21f307-a0e7-4b15-936f-0303cbefce72",
+      "kwargs": {
+        "column": "kv_primary",
+        "value_set": [
+          4.16,
+          7.2,
+          12.47,
+          24.94,
+          34.5
+        ]
+      },
+      "meta": {},
+      "type": "expect_column_distinct_values_to_be_in_set"
+    },
+    {
+      "id": "a47da314-408e-4abe-bb45-f03aeff3ed68",
+      "kwargs": {
+        "column": "kv_secondary",
+        "value_set": [
+          0.48,
+          0.12,
+          0.24
+        ]
+      },
+      "meta": {},
+      "type": "expect_column_distinct_values_to_be_in_set"
+    },
+    {
+      "id": "9c6716d0-db16-4732-aeb1-619b6b3bbfab",
+      "kwargs": {
+        "column": "kva",
+        "value_set": [
+          10,
+          25,
+          50,
+          75,
+          100,
+          167,
+          250,
+          300,
+          500,
+          750,
+          1000
+        ]
+      },
+      "meta": {},
+      "type": "expect_column_distinct_values_to_be_in_set"
+    },
+    {
+      "id": "b174a42a-6add-4787-8ffa-d31a761a9c4b",
+      "kwargs": {
+        "column": "name"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_be_unique"
+    },
+    {
+      "id": "60e3dcce-2982-431f-88a7-8c5cf54d3e20",
+      "kwargs": {
+        "column": "phases",
+        "max_value": 3.0,
+        "min_value": 1.0
+      },
+      "meta": {},
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "54b0d15b-19ec-4c9d-80d5-09c6f7461a58",
+      "kwargs": {
+        "column": "name"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    }
+  ],
+  "id": "f4f98bb9-c6c7-4abc-9559-872f736eae43",
+  "meta": {
+    "great_expectations_version": "1.3.12"
+  },
+  "name": "transformers",
+  "notes": null
+}

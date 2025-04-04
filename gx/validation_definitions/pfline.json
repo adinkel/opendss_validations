@@ -1,0 +1,22 @@
+{
+  "data": {
+    "asset": {
+      "id": "79227a34-86d8-4a2f-9a45-738fc8bcb765",
+      "name": "pfline_table"
+    },
+    "batch_definition": {
+      "id": "2476d58e-619c-420a-966b-c153b319867d",
+      "name": "pfline_batch_definition"
+    },
+    "datasource": {
+      "id": "5b16b6cf-b01a-480f-9d02-8ff31056c091",
+      "name": "dss_postgres_db"
+    }
+  },
+  "id": "9b0f5bdf-2c15-41da-af8f-8408769e4314",
+  "name": "pfline",
+  "suite": {
+    "id": "92bcce99-526e-4d64-a76d-5ad3ce58d5a3",
+    "name": "pfline"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "expectations": [
+    {
+      "id": "4fc9492d-1271-4087-8118-275b7e3dda6a",
+      "kwargs": {
+        "column": "volta",
+        "max_value": 10000.0,
+        "min_value": 0.0
+      },
+      "meta": {},
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "fea6daa9-c54d-419d-8331-b385aecbefbf",
+      "kwargs": {
+        "column": "voltb",
+        "max_value": 10000.0,
+        "min_value": 0.0
+      },
+      "meta": {},
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "0c6593b0-585b-4d1b-80f5-2285ef6b9da1",
+      "kwargs": {
+        "column": "voltc",
+        "max_value": 10000.0,
+        "min_value": 0.0
+      },
+      "meta": {},
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "f547809a-5cfd-416c-bae3-6e63efadb6d5",
+      "kwargs": {
+        "column": "volta"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "555c809c-8923-415b-b2b0-e9a6fcdbc675",
+      "kwargs": {
+        "column": "voltb"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "10456a72-d9a5-41db-92ce-75bba222aafc",
+      "kwargs": {
+        "column": "voltc"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    }
+  ],
+  "id": "f8c318f6-62a7-44c1-8eb8-6464339296c1",
+  "meta": {
+    "great_expectations_version": "1.3.12"
+  },
+  "name": "pfnode",
+  "notes": null
+}

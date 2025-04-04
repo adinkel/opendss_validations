@@ -1,0 +1,53 @@
+{
+  "expectations": [
+    {
+      "id": "890c927a-6ae2-49bd-a918-6c70e58bb50c",
+      "kwargs": {
+        "column": "name"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_be_unique"
+    },
+    {
+      "id": "8c84fd99-b09e-4f82-aad0-ea732b8c7cc5",
+      "kwargs": {
+        "column": "phases",
+        "max_value": 3.0,
+        "min_value": 1.0
+      },
+      "meta": {},
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "2b37940a-49e4-478d-9907-5aa6d59c69c9",
+      "kwargs": {
+        "column": "name"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "543a442a-b55b-4a67-af53-00921511cfb1",
+      "kwargs": {
+        "column_set": [
+          "id",
+          "name",
+          "bus",
+          "kv",
+          "kvar",
+          "conn",
+          "phases"
+        ],
+        "exact_match": false
+      },
+      "meta": {},
+      "type": "expect_table_columns_to_match_set"
+    }
+  ],
+  "id": "2abf73af-c7b3-4630-8439-fee932d65e54",
+  "meta": {
+    "great_expectations_version": "1.3.12"
+  },
+  "name": "capacitors",
+  "notes": null
+}

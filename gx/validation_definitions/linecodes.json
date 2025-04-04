@@ -1,0 +1,22 @@
+{
+  "data": {
+    "asset": {
+      "id": "283fa794-7aa4-4a1b-a384-2f6991a1a49c",
+      "name": "linecodes_table"
+    },
+    "batch_definition": {
+      "id": "27fb1991-bbd8-47ad-85c9-e6449d1e665e",
+      "name": "linecodes_batch_definition"
+    },
+    "datasource": {
+      "id": "5b16b6cf-b01a-480f-9d02-8ff31056c091",
+      "name": "dss_postgres_db"
+    }
+  },
+  "id": "6d2a48e2-fef7-410c-8df7-09e61728f55e",
+  "name": "linecodes",
+  "suite": {
+    "id": "1230714d-9561-438b-aa1b-99f036c7aec2",
+    "name": "linecodes"
+  }
+}
